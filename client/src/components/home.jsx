@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 function home() {
   const [user,setuser]=useState({
     a:'',b:'',c:''
@@ -15,22 +15,8 @@ function home() {
   
   const postdata = async(e)=>{
 e.preventDefault()
-const{a,b,c}=user
+await  axios.post('http://localhost:9999/a',{user}).then(res=>console.log(res)).catch(err=>console.log(err))
 
-const res=await fetch("/lala",{
-  method:"post",
-  headers:{
-    "content-Type":"application/json"
-  },body:JSON.stringify({
-    a,b,c,
-  })
-})
-const data = await res.json()
-if(data.status!==200){
-  window.alert('json end')
-}else{
-  window.alert('valid')
-}
 
 }
   
