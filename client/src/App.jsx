@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from './components/home.jsx'
+import Login from './components/Login.jsx'
 function App() {
   return (
-<Home/>
+<Login/>
   )
 }
 
