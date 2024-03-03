@@ -29,5 +29,5 @@ app.use(express.json());
 
 app.use('/',router)
 app.listen(process.env.PORT,()=>{
-    console.log('running backend on 9999');
+    console.log('backend running on 9999');
 })
