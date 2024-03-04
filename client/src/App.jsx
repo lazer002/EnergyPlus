@@ -1,8 +1,13 @@
 import React from 'react'
-import Login from './components/Login.jsx'
+import Signup from './components/signup.jsx'
+import Login from './components/login.jsx'
+
 function App() {
   return (
+    <>
+{/* <Signup/> */}
 <Login/>
+</>
   )
 }
 
