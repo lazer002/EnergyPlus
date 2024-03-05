@@ -14,9 +14,12 @@ const Uss = new mongo.Schema({
         type:String,
         default:'user'
     },
-    token:{
-        type:String
-    }
+    tokens: [{
+        token: {
+          type: String,
+          required: true,
+        },
+      }]
 })
 
 Uss.pre('save',async function(next){
@@ -27,35 +30,15 @@ Uss.pre('save',async function(next){
 })
 
 
-// Uss.methods.generatetoken = async function(){
-//     try{
-//         const token = jwt.sign({_id:this._id},process.env.Secret_key)
-//         this.tokens.push({token})
-//         await this.save()
-//         return token
-//     }catch(err){
-//         console.log(err);
-//     }
-// }
-
-
-
-
-
-
-
-
-Uss.methods.genratetoken = async function(){
+Uss.methods.generateAuthtoken = async function(){
     try{
         token = jwt.sign({_id:this._id},process.env.Secret_key)
         this.tokens.push({token})
         await this.save()
-     
         return token
     }catch(err){
 console.log(err);
     }
-
 }
 
 

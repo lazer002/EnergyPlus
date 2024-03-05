@@ -1,17 +1,14 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-app.use(cors({origin: 'http://localhost:5173'}))
+app.use(cors({origin: 'http://localhost:5173',
+credentials:true}))
 const dotenv = require('dotenv')
-const cookieParser=require('cookie-parser')
-const jwt = require('jsonwebtoken');
-
 
 const bodyparser = require('body-parser')
 dotenv.config({path:'./config.env'})
 const router = require('./routes/auth.js')
 require('./db/config.js')
-app.use(cookieParser());
 app.use(express.json());
 app.use(bodyparser.urlencoded({extended:true}))
 
