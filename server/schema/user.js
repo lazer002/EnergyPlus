@@ -32,9 +32,14 @@ Uss.pre('save',async function(next){
 
 Uss.methods.generateAuthtoken = async function(){
     try{
-        token = jwt.sign({_id:this._id},process.env.Secret_key)
-        this.tokens.push({token})
-        await this.save()
+        token = jwt.sign({
+            _id:this._id,
+            email:this.email,
+            role:this.role
+        
+        },process.env.Secret_key,{
+            expiresIn:'1h'
+        })
         return token
     }catch(err){
 console.log(err);

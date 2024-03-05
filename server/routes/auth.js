@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const app = express()
 const bcrypt = require('bcrypt');
 const User = require('../schema/user');
 const jwt =require('jsonwebtoken')
 const cookie = require('cookie-parser')
+const session = require('express-session')
 
 // router.post('/signup', async (req, res) => {
 //   const {email,password,role,token}=req.body.user
@@ -38,10 +40,12 @@ if(!email||!password){
     const ismatch = await bcrypt.compare(password,data.password)
 const token =await data.generateAuthtoken()
 console.log(token)
+res.cookie("jwtoken",token,{
+    expires:new Date(Date.now()+ 60000),
+    httpOnly:true,
+    // secure:true
 
-    //     const toke= jwt.sign({userId:User._id}, process.env.Secret_key,{expiresIn:'1h'}    
-    //   );
-
+});
 
 
 
