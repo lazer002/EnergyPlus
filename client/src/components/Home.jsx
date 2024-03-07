@@ -1,8 +1,22 @@
 import React from 'react'
+import banner from '../assets/banner.png'
+
+
 
 function home() {
   return (
-    <div>home</div>
+    <>
+      <div className=" carousel p-0 carabg">
+  <div className="b"><img src={banner}  className="carousal_slide"/></div>
+  </div>
+    
+    
+    
+    
+    
+    
+    </>
+
   )
 }
 
