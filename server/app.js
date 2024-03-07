@@ -4,11 +4,12 @@ const cors = require('cors')
 app.use(cors({origin: 'http://localhost:5173',
 credentials:true}))
 const dotenv = require('dotenv')
-
 const bodyparser = require('body-parser')
 dotenv.config({path:'./config.env'})
 const router = require('./routes/auth.js')
+const cookieParser = require('cookie-parser')
 require('./db/config.js')
+app.use(cookieParser())
 app.use(express.json());
 app.use(bodyparser.urlencoded({extended:true}))
 
