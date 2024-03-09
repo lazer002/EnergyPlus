@@ -1,9 +1,14 @@
 import React from 'react'
 
 function Contect() {
+
+
+  
   return (
-    <div>Contect</div>
-  )
+<>
+fwafwa</>
+  );
+
 }
 
 export default Contect

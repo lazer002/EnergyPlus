@@ -13,8 +13,13 @@
     "axios": "^1.6.7",
     "cors": "^2.8.5",
     "react": "^18.2.0",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.1"
+    "react-native-card-carousel": "^1.1.0",
+    "react-router-dom": "^6.22.1",
+    "react-slick": "^0.30.2",
+    "scroll-carousel": "^1.2.7",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

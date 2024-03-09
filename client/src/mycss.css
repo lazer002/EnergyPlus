@@ -1,6 +1,6 @@
 .carousel{
     width: 100vw;
-    height: 70vh;
+    height: 70%;
     position: relative;
     display: grid;
     justify-content: end;
@@ -15,13 +15,14 @@ filter: blur(1px);}
 
 img, video {
     position: absolute;
-    max-width: 100vw;
+    max-width: 1000px;
     height: auto;
     left: 60px;
 }
 
-@media screen and (max-width : 575px ) { .b{height: 500px;
-}}
+@media screen and (max-width : 575px ) { .b{height: 500px;}
+.carousal_slide{left: 10px;}
+}
 @media screen and (max-width : 768px ) { .carousel{width:  100vw;
 }}
 
@@ -127,4 +128,6 @@ img, video {
       background: #3bd80d;
     }
   }
+  
+
   

@@ -18,12 +18,13 @@ list.classList.toggle('top-[80px]'),list.classList.toggle('opacity-100')
 
   return (
     <>
-      <nav className='p-5 bg-slate-900 shadow md:flex md:items-center md:justify-between '>
+    <div className="flex justify-center">
+      <nav className='container p-2 px-4 my-3 bg-slate-900 shadow md:flex md:items-center md:justify-between absolute top-0 z-10 w-9/12 rounded-3xl'>
         <div className='my-3 flex justify-between items-center z-40' >
           <span className='text-2xl '>Logo</span>
           <span className='md:hidden block text-2xl cursor-pointer' onClick={menubar}>
           <svg  fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5 " />
 </svg>
 
           </span>
@@ -41,7 +42,9 @@ list.classList.toggle('top-[80px]'),list.classList.toggle('opacity-100')
 
 
       </nav>
+      </div>
     </>
+    
   )
 }
 

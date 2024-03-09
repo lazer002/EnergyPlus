@@ -1,6 +1,6 @@
 import React from 'react'
 import banner from '../assets/banner.png'
-
+import Carousel from './carousel.jsx'
 
 
 function home() {
@@ -10,7 +10,7 @@ function home() {
   <div className="b"><img src={banner}  className="carousal_slide"/></div>
   </div>
     
-    
+    <Carousel/>
     
     
     
