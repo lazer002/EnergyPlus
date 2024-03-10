@@ -7,7 +7,7 @@ import Login from './components/login.jsx'
 import Contect from './components/Contect.jsx';
 import About from './components/About.jsx';
 import Product from './components/Product.jsx';
-
+import { ChakraProvider } from '@chakra-ui/react'
 function App() {
 
 
