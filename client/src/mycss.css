@@ -131,13 +131,19 @@ filter: blur(1px);}
   
 .slick-arrow{display: none !important;}
 .slider-container{width: fit-content !important;}
-.card{width: 18vw;
-  position: relative;
-border: 1px solid rgba(0, 0, 0, 0.555);
-border-radius: 8px;
-overflow: hidden;
-}
-.card-body{
-  /* position: absolute; */
-bottom: 40px;
-}
+.bg-1{background-image: url('./assets/image/bg-2.jpg');
+  background-attachment: fixed;
+background-size: contain;}
+.glass{
+  background: rgba(255, 255, 255, 0.404);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.158);
+backdrop-filter: blur(3px);}
+.carabg::after  {content: '';
+position: absolute;
+width: 100%;
+height: 100px;
+z-index: 100000                                               ;
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,20,3,1) 26%, rgba(0, 12, 2, 0.943) 57%, rgba(0,56,9,0.027048319327731107) 100%);
+bottom: -10px;}

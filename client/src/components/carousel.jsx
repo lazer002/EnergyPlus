@@ -20,7 +20,7 @@ function carousel() {
     className: "center",
     centerMode: true,
     infinite: true,
-    centerPadding: "260px",
+    centerPadding: "360px",
     slidesToShow: 3,
     autoplay: true,
     speed: 3000,
@@ -29,8 +29,8 @@ function carousel() {
   return (
     <>
     
-      <div className="container my-6 ">
-        <div className="border rounded-2xl my-3 shadow-lg">
+      <div className=" bg-1 shadow-2xl">
+        <div className="rounded-2xl shadow-lg px-24">
           <div className="text-center text-6xl pb-5">Hot Product</div>
           <div className="h-3/4 text-center">
             <Slider {...settings}>
@@ -46,6 +46,13 @@ function carousel() {
           </div>
         </div>
       </div>
+
+
+
+ 
+
+
+
     </>
   )
 }

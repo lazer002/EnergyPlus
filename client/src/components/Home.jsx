@@ -25,7 +25,7 @@ function home() {
 
   return (
     <>
-<div className="">
+<div className="carosel-body">
       <div className=" carousel p-0 carabg">
         <div className="slider-container absolute left-12 md:left-48 bottom-48">
           <Slider {...settings}>
@@ -52,12 +52,11 @@ function home() {
         </div>
         <div className="b"><img src={banner} className="carousal_slide" /></div>
       </div>
-
-      <Carousel />
-
-
-<Perks/>
 </div>
+      <Carousel />
+<Perks/>
+
+
     </>
 
   )

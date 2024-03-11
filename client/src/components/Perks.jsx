@@ -9,8 +9,8 @@ function Perks() {
             <div className="container">
                 <div className="flex justify-evenly text-center">
                
-                    <div>
-                        <div className="bg-orange-900 rounded-lg size-48  hover:scale-105 relative flex items-center justify-center">
+                    <div cla>
+                        <div className="bg-orange-900 rounded-2xl size-48 shadow-2xl hover:scale-105 relative flex items-center justify-center">
                             <img src={Thunder} alt="" className='size-24 hover:scale-95' />
                         </div>
 
@@ -21,7 +21,7 @@ function Perks() {
                         </div>
                     </div>
                     <div>
-                        <div className="bg-orange-900 rounded-lg size-48  hover:scale-105 relative flex items-center justify-center">
+                        <div className="bg-orange-900 rounded-lg size-48 shadow-2xl hover:scale-105 relative flex items-center justify-center">
                             <img src={suger} alt="" className='size-24 hover:scale-95' />
                         </div>
 
@@ -32,7 +32,7 @@ function Perks() {
                         </div>
                     </div>
                     <div>
-                        <div className="bg-orange-900 rounded-lg size-48  hover:scale-105 relative flex items-center justify-center">
+                        <div className="bg-orange-900 rounded-lg size-48 shadow-2xl hover:scale-105 relative flex items-center justify-center">
                             <img src={Amazing} alt="" className='size-24 hover:scale-95' />
                         </div>
 

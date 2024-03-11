@@ -19,7 +19,7 @@ list.classList.toggle('top-[80px]'),list.classList.toggle('opacity-100')
   return (
     <>
     <div className="flex justify-center">
-      <nav className='container p-2 px-4 my-3 bg-slate-900 shadow md:flex md:items-center md:justify-between absolute top-0 z-10 w-9/12 rounded-3xl'>
+      <nav className='container p-2 px-4 my-3 bg-1 shadow md:flex md:items-center md:justify-between absolute top-0 z-10 w-9/12 rounded-3xl'>
         <div className='my-3 flex justify-between items-center z-40' >
           <span className='text-2xl '>Logo</span>
           <span className='md:hidden block text-2xl cursor-pointer' onClick={menubar}>
@@ -30,7 +30,7 @@ list.classList.toggle('top-[80px]'),list.classList.toggle('opacity-100')
           </span>
         </div>
 
-        <ul className='md:flex md:item-center z-[1] md:z-auto md:static absolute bg-slate-900 left-0 w-full md:w-auto pl-5 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-700 '>
+        <ul className='md:flex md:item-center z-[1] md:z-auto md:static absolute bg-2 left-0 w-full md:w-auto pl-5 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-700 '>
         
             <li className='m-4 hover:text-cyan-500 text-xl'><NavLink to="/">home</NavLink></li>
             <li className='m-4 hover:text-cyan-500 text-xl'> <NavLink to="/Product">Product</NavLink></li>
