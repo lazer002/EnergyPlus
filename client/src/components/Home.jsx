@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Bannertitle from './Bannertitle.jsx';
 import Perks from './Perks.jsx';
+import Details from './details.jsx';
 
 function home() {
 
@@ -55,7 +56,7 @@ function home() {
 </div>
       <Carousel />
 <Perks/>
-
+<Details/>
 
     </>
 

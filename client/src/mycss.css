@@ -147,3 +147,4 @@ z-index: 100000                                               ;
 background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,20,3,1) 26%, rgba(0, 12, 2, 0.943) 57%, rgba(0,56,9,0.027048319327731107) 100%);
 bottom: -10px;}
+.card-details{display: flex;}
