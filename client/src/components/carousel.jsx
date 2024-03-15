@@ -25,14 +25,15 @@ function carousel() {
     autoplay: true,
     speed: 3000,
     autoplaySpeed: 3000,
+ 
   };
   return (
     <>
     
-      <div className=" bg-1 shadow-2xl">
+      <div className=" bg5 shadow-2xl ">
         <div className="rounded-2xl shadow-lg px-24">
           <div className="text-center text-6xl pb-5">Hot Product</div>
-          <div className="h-3/4 text-center">
+          <div className="h-3/4 text-center slerder">
             <Slider {...settings}>
               <Cards cardimage={p3} title='a' />
               <Cards cardimage={p1} title='a' />

@@ -6,7 +6,7 @@ import Thunder from '../assets/Thunder.avif'
 function Perks() {
     return (
         <>
-            <div className="container">
+            <div className="container py-36">
                 <div className="flex justify-evenly text-center">
                
                     <div cla>

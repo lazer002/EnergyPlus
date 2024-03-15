@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Bannertitle from './Bannertitle.jsx';
 import Perks from './Perks.jsx';
 import Details from './details.jsx';
+ import Sliderrr from './slider.jsx'
+import Footer from './footer.jsx';
 
 function home() {
 
@@ -19,8 +21,7 @@ function home() {
     speed: 3000,
     autoplaySpeed: 3000,
     verticalSwiping: false,
-    
-
+   
   };
 
 
@@ -55,9 +56,11 @@ function home() {
       </div>
 </div>
       <Carousel />
-<Perks/>
 <Details/>
+<Sliderrr/>
 
+<Perks/>
+<Footer/>
     </>
 
   )
