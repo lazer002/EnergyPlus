@@ -8,8 +8,9 @@ import Bannertitle from './Bannertitle.jsx';
 import Perks from './Perks.jsx';
 import Details from './details.jsx';
  import Sliderrr from './slider.jsx'
+ import Vod from '../assets/video/0c51fe16719840f6b316f72f1389ed5b.SD-480p-1.2Mbps-24780803.mp4'
 import Footer from './footer.jsx';
-
+import Fourtwo from './fourtwo.jsx';
 function home() {
 
   const settings = {
@@ -57,7 +58,9 @@ function home() {
 </div>
       <Carousel />
 <Details/>
-<Sliderrr/>
+
+<video src={Vod} loop autoPlay muted className='w-100'></video>
+<Fourtwo/>
 
 <Perks/>
 <Footer/>

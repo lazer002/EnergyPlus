@@ -3,7 +3,7 @@ import suger from '../assets/Sugar.avif'
 function footer() {
   return (
     <>
-    <div className="container pt-48 pb-12">
+    <div className="container pt-35 pb-12">
         <div className="flex justify-between">
             <div className="utiles">
 <h1>UTILITIES</h1>

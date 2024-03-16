@@ -13,7 +13,7 @@ width: 500px;
 overflow: hidden;
 filter: blur(1px);}
 
-.b > img, video {
+.b > img {
     position: absolute;
     max-width: 1000px;
     height: auto;
@@ -163,3 +163,6 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,20,3,1) 26%, rgba(0, 
 bottom: -10px;}
 
 .br-1{border-left: 5px solid rgb(35, 171, 212) !important;}
+.prohover{background-color: red;
+width: 70%;
+}

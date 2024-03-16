@@ -16,7 +16,7 @@ function caro() {
   return (
       <>
     <div className="text-9xl font-extrabold py-3">FEATURED PRODUCTS</div>
-    <div className=" ms-96">
+    <div className="">
       <Slider {...ser}>
         
         <Hcard/>
