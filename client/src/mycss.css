@@ -51,8 +51,9 @@
     display: none;
   }
 }
-
+/* ############################# */
 .carousal_slide {
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px);
   -webkit-animation: carousal_slide 12s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
   animation: carousal_slide 12s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
 }
@@ -117,7 +118,7 @@
 }
 
 
-
+/* ######################## */
 .carabg {
   -webkit-animation: carabg 12s infinite alternate both;
   animation: carabg 12s infinite alternate both;
@@ -166,6 +167,99 @@
     background: #3bd80d;
   }
 }
+/* ################################## */
+
+
+.carousal_bg{
+  width: 45%;
+  height: 125%;
+  position: absolute;
+  bottom: -74px;
+  right: -100px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 31% 69% 23% 77% / 66%
+  18% 82% 34%;}
+.carousal_bg {
+  -webkit-animation: carousal_bg 12s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
+  animation: carousal_bg 12s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite;
+}
+
+@-webkit-keyframes carousal_bg {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    background:#19dcea
+  }
+
+  23% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    background:#ea1919
+  }
+
+  48% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    background:#2aea19
+  }
+
+  73% {
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+    background:#d219ea
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    background:#eadc19
+  }
+}
+
+@keyframes carousal_bg {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    background:#19dcea
+  }
+
+  23% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    background:#ea1919
+  }
+
+  48% {
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    background:#2aea19
+  }
+
+  73% {
+    -webkit-transform: rotate(-270deg);
+    transform: rotate(-270deg);
+    background:#d219ea
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    background:#eadc19
+  }
+}
+
+
+
+
+
+
+
+
+/* ############################### */
+
+
+
+
 
 .slick-vertical>.slick-arrow {
   display: none !important;
@@ -195,7 +289,7 @@
   background: rgb(17, 18, 19);
   background: linear-gradient(180deg, rgba(17, 18, 19, 0.527) 0%, rgba(26, 26, 26, 0.534) 100%), url('./assets/bg1.jpg');
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg-3 {
@@ -210,10 +304,7 @@
   border: 1px solid rgba(255, 255, 255, 0.158);
   backdrop-filter: blur(3px);
 }
-.carabg{border-radius: 31% 69% 23% 77% / 66%
-  18% 82% 34%
-  
-}
+
 .carabg::after {
   /* content: ''; */
   position: absolute;

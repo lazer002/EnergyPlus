@@ -19,7 +19,7 @@ list.classList.toggle('top-[80px]'),list.classList.toggle('opacity-100')
   return (
     <>
     <div className="flex justify-center">
-      <nav className='container p-2 px-4 my-3 bg5 shadow md:flex md:items-center md:justify-between absolute top-0 z-10 w-9/12 rounded-3xl'>
+      <nav className='container p-2 px-4 my-3 bg-white shadow-2xl md:flex md:items-center md:justify-between absolute top-0 z-10 w-9/12 rounded-3xl'>
         <div className='my-3 flex justify-between items-center z-40' >
           <span className='text-2xl '>Logo</span>
           <span className='md:hidden block text-2xl cursor-pointer' onClick={menubar}>

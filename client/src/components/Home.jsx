@@ -29,7 +29,7 @@ function home() {
   return (
     <>
 <div className="carosel-body bg5 ">
-      <div className=" carousel p-0 carabg">
+      <div className=" carousel p-0  relative overflow-hidden">
         <div className="slider-container absolute left-12 md:left-48 bottom-48">
           <Slider {...settings}>
         
@@ -53,9 +53,10 @@ function home() {
             </div>
           </Slider>
         </div>
-        <div className="b">
-          <div className=""></div>
-          <img src={banner} className="carousal_slide " />
+<div className="carousal_bg bg-red-700"></div>
+        <div className="b ">
+          {/* <div className=""></div> */}
+          <img src={banner} className="carousal_slide"/>
           </div>
       </div>
 </div>
@@ -64,6 +65,7 @@ function home() {
 
 <video src={Vod} loop autoPlay muted className='w-100 py-24'></video>
 <Fourtwo/>
+
 
 <Perks/>
 <Footer/>
