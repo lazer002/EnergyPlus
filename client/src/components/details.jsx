@@ -9,9 +9,9 @@ function details() {
       <div className="w-full border-gray-50">
         <img src={p1} alt="" className='mt-36'/>
       </div>
-      <div className=" border-gray-50">
-<h3>hufwafbwa gfwah gwagwag</h3>
-<div className='text-lg'>O HFWIAN GWGOWJO FGWGWAJGWJA?</div>
+      <div className=" border-gray-50 pt-12">
+<div className='text-4xl'>hufwafbwa gfwah gwagwag</div>
+<div className='text-lg py-3'>O HFWIAN GWGOWJO ?</div>
 <div className='grid grid-cols-2 gap-6 w-2/4'>
 <div className=" p-4 rounded-tr-3xl rounded-bl-3xl border border-l-red-800  glass br-1">
 <p className='text-cyan-400 py-2'> <span className='bg-cyan-800 text-white'>fwafwafaw </span> gfuwabu gwhaig awi <br /> ojg owagiwa jg wajg</p>

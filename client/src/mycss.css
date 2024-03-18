@@ -20,6 +20,7 @@
   max-width: 1000px;
   height: auto;
   left: 60px;
+  top: -150px;
 }
 
 @media screen and (max-width : 575px) {
@@ -176,7 +177,9 @@
   position: absolute;
   bottom: -74px;
   right: -100px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  filter: blur(1px);
+  backdrop-filter: blur(1px);
+  box-shadow: rgba(0, 0, 0, 0.267) 0px -23px 25px 0px inset,rgba(0, 0, 0, 0.267) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.219) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.192) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,rgba(0, 0, 0, 0.233) 0px 16px 8px, rgba(0, 0, 0, 0.233) 0px 32px 16px;
   border-radius: 31% 69% 23% 77% / 66%
   18% 82% 34%;}
 .carousal_bg {
@@ -291,7 +294,15 @@
   background-attachment: fixed;
   background-size: cover;
 }
-
+.bg7 {
+  /* background: rgb(17, 18, 19); */
+  background: linear-gradient(180deg, rgba(17, 18, 19, 0.527) 0%, rgba(26, 26, 26, 0.534) 100%), url('./assets/bg7.png');
+  background-attachment: fixed;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+nav{box-shadow: rgba(0, 0, 0, 0.603) 0px 19px 38px, rgba(0, 0, 0, 0.568) 0px 15px 12px;
+}
 .bg-3 {
   background-image: url('./assets/bg1.jpg');
   background-attachment: fixed;
