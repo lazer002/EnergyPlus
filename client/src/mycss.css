@@ -250,7 +250,7 @@
     background:#eadc19
   }
 }
-
+.shadow1{filter: drop-shadow(0 3px 25px rgb(0 0 0));}
 
 
 
@@ -310,10 +310,10 @@ nav{box-shadow: rgba(0, 0, 0, 0.603) 0px 19px 38px, rgba(0, 0, 0, 0.568) 0px 15p
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.404);
+  background: rgba(255 255 255 / 2%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
   border: 1px solid rgba(255, 255, 255, 0.158);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(4px);
 }
 
 .carabg::after {
@@ -343,10 +343,10 @@ nav{box-shadow: rgba(0, 0, 0, 0.603) 0px 19px 38px, rgba(0, 0, 0, 0.568) 0px 15p
   transform: scale(1.15);
 }
 
-.cardholder:hover {
+/* .cardholder:hover {
   background-color: red;
   transition: 1s;
-}
+} */
 
 /* .imagehover:hover{
 

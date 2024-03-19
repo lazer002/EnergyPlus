@@ -6,11 +6,11 @@ function Cards(props) {
   return (
     <>
 <div className="w-full px-4 ">
-            <div className="bg-white rounded-lg overflow-hidden mb-10 shadow-2xl glass">
+            <div className="bg-white rounded-lg overflow-hidden mb-10 shadow1 glass">
                <img
                   src={props.cardimage}
                   alt="image"
-                  className="w-full"
+                  className="w-full shadow1"
                   />
                <div className="p-8 sm:p-9 md:p-7 xl:p-9 text-center">
                   <h3>

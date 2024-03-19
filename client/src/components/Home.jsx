@@ -11,6 +11,10 @@ import Details from './details.jsx';
  import Vod from '../assets/video/0c51fe16719840f6b316f72f1389ed5b.SD-480p-1.2Mbps-24780803.mp4'
 import Footer from './footer.jsx';
 import Fourtwo from './fourtwo.jsx';
+import p1 from '../assets/p3.png'
+import p2 from '../assets/p6.png'
+import p3 from '../assets/p5.png'
+import p4 from '../assets/p9.png'
 function home() {
 
   const settings = {
@@ -28,7 +32,7 @@ function home() {
 
   return (
     <>
-<div className="carosel-body bg5 ">
+<div className="carosel-body">
       <div className=" carousel p-0  relative overflow-hidden">
         <div className="slider-container absolute left-12 md:left-48 bottom-48">
           <Slider {...settings}>
@@ -63,8 +67,11 @@ function home() {
       <Carousel />
 <Details />
 
-<video src={Vod} loop autoPlay muted className='w-100 py-24'></video>
-<Fourtwo/>
+{/* <video src={Vod} loop autoPlay muted className='w-100 py-24'></video> */}
+<Fourtwo pimg={p1} pname='ORANGEDRINK' bghover='bg-orange-600'/>
+<Fourtwo pimg={p2} pname='GREENDRINK' bghover='bg-white'/>
+<Fourtwo pimg={p3} pname='REDDRINK' bghover='bg-red-700'/>
+<Fourtwo pimg={p4} pname='REDDRINK' bghover='bg-pink-600'/>
 
 
 <Perks/>

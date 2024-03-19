@@ -5,9 +5,9 @@ import p1 from '../assets/p1.png'
 function details() {
   return (
     <>
-    <div className="container flex justify-center shadow-2xl rounded-3xl bg-3 mt-24">
+    <div className="container flex justify-center shadow-2xl rounded-3xl bg-3 my-24">
       <div className="w-full border-gray-50">
-        <img src={p1} alt="" className='mt-36'/>
+        <img src={p1} alt="" className='mt-36 shadow1'/>
       </div>
       <div className=" border-gray-50 pt-12">
 <div className='text-4xl'>hufwafbwa gfwah gwagwag</div>
