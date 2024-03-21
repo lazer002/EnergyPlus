@@ -1,5 +1,4 @@
 import React from 'react'
-import zoro from '../assets/zoro.png'
 import suger from '../assets/Sugar.avif'
 import Amazing from '../assets/Amazing.avif'
 import Thunder from '../assets/Thunder.avif'
@@ -9,7 +8,7 @@ function Perks() {
             <div className="container py-36">
                 <div className="flex justify-evenly text-center">
                
-                    <div cla>
+                    <div >
                         <div className="bg-orange-900 rounded-2xl size-48 shadow-2xl hover:scale-105 relative flex items-center justify-center">
                             <img src={Thunder} alt="" className='size-24 hover:scale-95' />
                         </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import '../css/nav.css'
 
-
-function navbar() {
+function Navbar() {
 
 
 function menubar(e){
@@ -18,7 +18,7 @@ list.classList.toggle('top-[80px]'),list.classList.toggle('opacity-100')
 
   return (
     <>
-    <div className="flex justify-center">
+    {/* <div className="flex justify-center">
       <nav className='container p-2 px-4 my-3 bg-pink-200  md:flex md:items-center md:justify-between absolute top-0 z-10 w-9/12 rounded-3xl'>
         <div className='my-3 flex justify-between items-center z-40' >
           <span className='text-2xl '>Logo</span>
@@ -42,13 +42,30 @@ list.classList.toggle('top-[80px]'),list.classList.toggle('opacity-100')
 
 
       </nav>
-      </div>
+      </div> */}
+
+<div className="flex justify-between">
+<div className="lgog px-16 py-3">LOGO</div>
+<div className="nav-tab flex space-x-10 ">
+<h1 className='p-3 border rounded-3xl relative overflow-hidden'><a href="" className='decoration-0 z-10 relative hover:text-black'>Product</a></h1>
+<h1 className='p-3 border rounded-3xl relative overflow-hidden'><a href="" className='decoration-0 z-10 relative hover:text-black'>Studio</a></h1>
+<h1 className='p-3 border rounded-3xl relative overflow-hidden'><a href="" className='decoration-0 z-10 relative hover:text-black'>Contect</a></h1>
+
+
+
+
+</div>
+
+
+</div>
+
+
     </>
     
   )
 }
 
-export default navbar
+export default Navbar
 
 
 

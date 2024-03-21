@@ -15,7 +15,7 @@ import p1 from '../assets/p3.png'
 import p2 from '../assets/p6.png'
 import p3 from '../assets/p5.png'
 import p4 from '../assets/p9.png'
-function home() {
+function Home() {
 
   const settings = {
     infinite: true,
@@ -81,4 +81,4 @@ function home() {
   )
 }
 
-export default home
+export default Home
