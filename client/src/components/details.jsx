@@ -5,7 +5,7 @@ import p1 from '../assets/p1.png'
 function Details() {
   return (
     <>
-    <div  className="container flex justify-center shadow-2xl rounded-3xl bg-3 my-24">
+    <div  className="container flex justify-center shadow-2xl rounded-3xl bg-3 my-24" data-scroll data-scroll-speed="0.8">
       <div className="w-full border-gray-50">
         <img src={p1} alt="" className='mt-36 shadow1'/>
       </div>

@@ -13,7 +13,7 @@ const hg = `relative overflow-hidden cardholder ${isHovered ? bghover : ' '}`
   return (
     <> 
 
-          <div className={hg} onMouseEnter={hvron} onMouseLeave={hvrleave}>
+          <div className={hg} onMouseEnter={hvron} onMouseLeave={hvrleave} data-scroll data-scroll-speed="0.8">
             <div className={`imagehover flex justify-center  py-12`}>
               <img src={pimg} alt="" className='size-96 shadow1' />
               <div className='prohover '></div>
