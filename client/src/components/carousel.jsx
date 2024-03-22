@@ -30,7 +30,7 @@ function carousel() {
   return (
     <>
     
-      <div className="shadow-2xl ">
+      <div className="shadow-2xl " data-scroll data-scroll-speed="1" data-scroll-repeat="true">
         <div className="rounded-2xl shadow-lg px-24">
           <div className="text-center text-6xl pb-5">Hot Product</div>
           <div className="h-3/4 text-center slerder">

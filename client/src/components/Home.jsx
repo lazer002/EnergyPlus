@@ -15,6 +15,7 @@ import p1 from '../assets/p3.png'
 import p2 from '../assets/p6.png'
 import p3 from '../assets/p5.png'
 import p4 from '../assets/p9.png'
+import Move from './Move.jsx';
 function Home() {
 
   const settings = {
@@ -64,8 +65,10 @@ function Home() {
           </div>
       </div>
 </div>
+
       <Carousel />
 <Details />
+<Move/>
 
 {/* <video src={Vod} loop autoPlay muted className='w-100 py-24'></video> */}
 <Fourtwo pimg={p1} pname='ORANGEDRINK' bghover='bg-orange-600'/>
