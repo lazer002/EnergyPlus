@@ -33,8 +33,8 @@ function Home() {
 
   return (
     <>
-<div className="carosel-body">
-      <div className=" carousel p-0  relative overflow-hidden">
+<div className="carosel-body" data-scroll data-scroll-speed='-0.5'>
+      <div className=" carousel p-0 relative overflow-hidden">
         <div className="slider-container absolute left-12 md:left-48 bottom-48">
           <Slider {...settings}>
         

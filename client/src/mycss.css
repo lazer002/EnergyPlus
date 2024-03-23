@@ -9,7 +9,7 @@
 
 .b {
   position: relative;
-  height: 600px;
+  height: 100vh;
   width: 500px;
   overflow: hidden;
   filter: blur(1px);
@@ -172,7 +172,7 @@
 
 
 .carousal_bg{
-  width: 45%;
+  width: 59%;
   height: 125%;
   position: absolute;
   bottom: -74px;
