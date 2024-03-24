@@ -1,13 +1,39 @@
 import React from 'react'
 import p1 from '../assets/p1.png'
-
+import '../js/animation.js'
+import gsap from "gsap";
+import _ScrollTrigger from 'gsap/ScrollTrigger';
 
 function Details() {
+
+  // var clickdiv= document.querySelector('.clickdiv')
+
+  gsap.registerPlugin(_ScrollTrigger)
+
+  gsap.to(".detail", {
+scrollTrigger:{
+  trigger:".detail",
+  // markers:true,
+  start:"50px 80%",
+  // end:"10% 50%",
+  toggleActions:"play restart reverse none",
+  scrub:true
+},
+scale:1.1,
+duration:3,
+  })
+
+  
+
+  
   return (
     <>
-    <div  className="container flex justify-center shadow-2xl rounded-3xl bg-3 my-24" data-scroll data-scroll-speed="0.1" >
+    <div className="detail container flex justify-center shadow-2xl rounded-3xl bg-3 my-24">
+      <div className='bg-red-600 rounded-full fixed py-8 px-7 font-bold clickdiv scale-0'>
+Click
+      </div>
       <div className="w-full border-gray-50">
-        <img src={p1} alt="" className='mt-36 shadow1'/>
+        <img src={p1} alt="" className='mt-36 shadow1' />
       </div>
       <div className=" border-gray-50 pt-12">
 <div className='text-4xl'>hufwafbwa gfwah gwagwag</div>

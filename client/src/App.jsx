@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { BrowserRouter,Route,Routes } from "react-router-dom";
 import Navbar from './components/Navbar.jsx';
 import Home from './components/Home.jsx';
@@ -7,13 +7,12 @@ import Login from './components/login.jsx'
 import Contect from './components/Contect.jsx';
 import About from './components/About.jsx';
 import Product from './components/Product.jsx';
-
 import LocomotiveScroll from 'locomotive-scroll';
+
 
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();
-
 
   return (
 <>
