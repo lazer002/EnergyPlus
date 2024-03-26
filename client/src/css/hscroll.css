@@ -1,0 +1,8 @@
+.penel { width: 100vw; height: 100vh;}
+.ff{
+  width: 600%;
+display: flex;}
+.co{  
+  position: relative;
+  overflow-x: hidden;
+}

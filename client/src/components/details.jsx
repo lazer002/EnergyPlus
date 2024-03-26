@@ -2,13 +2,13 @@ import React from 'react'
 import p1 from '../assets/p1.png'
 import '../js/animation.js'
 import gsap from "gsap";
-import _ScrollTrigger from 'gsap/ScrollTrigger';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 function Details() {
 
   // var clickdiv= document.querySelector('.clickdiv')
 
-  gsap.registerPlugin(_ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger)
 
   gsap.to(".detail", {
 scrollTrigger:{
@@ -16,8 +16,8 @@ scrollTrigger:{
   // markers:true,
   start:"50px 80%",
   // end:"10% 50%",
-  toggleActions:"play restart reverse none",
-  scrub:true
+  // toggleActions:"play restart reverse none",
+  scrub:1
 },
 scale:1.1,
 duration:3,
