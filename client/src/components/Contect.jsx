@@ -1,43 +1,47 @@
 import React,{useEffect} from 'react'
-import '../css/hscroll.css'
-import Gsap from "gsap";
-import scrollTrigger from 'gsap/ScrollTrigger';
-import p1 from '../assets/p3.png'
 
+import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import p1 from '../assets/p3.png'
+import Fourtwo from './fourtwo';
 
 function Contect() {
-  Gsap.registerPlugin(scrollTrigger);
-// const con = document.querySelector('.ff')
-const sections = Gsap.utils.toArray('.penel')
 
-
-let scroltwe = Gsap.to('.penel',{
-  xPercent: -100 * (sections.length -1),
-  ease:'none',
-  scrollTrigger:{
-    trigger:'.ff',
-    pin:true,
-    scrub:1,
-  end:'+=3000'  }
+  gsap.registerPlugin(ScrollTrigger)
+    useGSAP(() => {
+const section = gsap.utils.toArray('.page')
+console.log(section);
+gsap.to(section,{
+        xPercent: -100 * (section.length - 1),
+        ease:'none',
+        scrollTrigger:{
+            trigger:'.pages',
+            pin:true,
+            scrub:1,
+            end:'+=6000'
+        }
 })
-
+}); 
+ 
 
   return (
     <>
 
-<div className="co">      
-<div className="h-screen w-screen bg-blue-500">one</div>
+<div className="h100">ofwafwafwafne</div>
+<div className="wrapper">      
 
-<div className="ff">
-        <div className="penel  bg-red-500">one</div>
-        <div className="penel  bg-yellow-500">two</div>
-        <div className="penel  bg-orange-500">three</div>
-        <div className="penel  bg-green-500">four</div>
-        <div className="penel  bg-purple-500">five</div>
-        <div className="penel  bg-blue-500">six</div>
+<div className="pages">
+        <div className="page "><Fourtwo pimg={p1} pname='ORANGEDRINK' bghover='bg-orange-600'/></div>
+        <div className="page "><Fourtwo pimg={p1} pname='ORANGEDRINK' bghover='bg-orange-600'/></div>
+        <div className="page "><Fourtwo pimg={p1} pname='ORANGEDRINK' bghover='bg-orange-600'/></div>
+        <div className="page "><Fourtwo pimg={p1} pname='ORANGEDRINK' bghover='bg-orange-600'/></div>
+        <div className="page "><Fourtwo pimg={p1} pname='ORANGEDRINK' bghover='bg-orange-600'/></div>
+        <div className="page "><Fourtwo pimg={p1} pname='ORANGEDRINK' bghover='bg-orange-600'/></div>
+
       </div>
       </div>
-
+      <div className="h100">ofwafawfawfane</div>
 </>
   );
 

@@ -1,4 +1,5 @@
-
+body{  position: relative;
+  overflow-x: hidden;}
 
 .carousel {
   width: 100%;
@@ -350,10 +351,8 @@ nav{box-shadow: rgba(0, 0, 0, 0.603) 0px 19px 38px, rgba(0, 0, 0, 0.568) 0px 15p
   transition: 1s;
 } */
 
-/* .imagehover:hover{
-
-  transition: 1s;
-z-index: -1;} */
+.imagehover{height: 100vh;
+align-items: center;}
 .cardholder:hover .sub1 {
   opacity: 1;
   border-radius: 100%;

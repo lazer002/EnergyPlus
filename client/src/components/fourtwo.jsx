@@ -9,12 +9,12 @@ const hvron = ()=>{
 const hvrleave = ()=>{
   setisHovered(false)
 }
-const hg = `relative overflow-hidden cardholder ${isHovered ? bghover : ' '} h-screen`
+const hg = `relative overflow-hidden cardholder ${isHovered ? bghover : ' '} h-screen page`
   return (
     <> 
 
           <div className={hg} onMouseEnter={hvron} onMouseLeave={hvrleave} data-scroll >
-            <div className={`imagehover flex justify-center  py-12`}>
+             <div className={`imagehover flex justify-center py-12`}>
               <img src={pimg} alt="" className='size-96 shadow1'  />
               <div className='prohover '></div>
             </div>
