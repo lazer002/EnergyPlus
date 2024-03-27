@@ -299,10 +299,9 @@ body{  position: relative;
 }
 .bg7 {
   /* background: rgb(17, 18, 19); */
-  background: linear-gradient(180deg, rgba(17, 18, 19, 0.527) 0%, rgba(26, 26, 26, 0.534) 100%), url('./assets/bg7.png');
+  background:url('./assets/bg7.png');
   background-attachment: fixed;
   background-size: cover;
-  backdrop-filter: blur(10px);
 }
 nav{box-shadow: rgba(0, 0, 0, 0.603) 0px 19px 38px, rgba(0, 0, 0, 0.568) 0px 15px 12px;
 }

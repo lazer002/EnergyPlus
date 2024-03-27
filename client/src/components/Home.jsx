@@ -20,7 +20,11 @@ import p2 from '../assets/p6.png'
 import p3 from '../assets/p5.png'
 import p4 from '../assets/p9.png'
 import Move from './Move.jsx';
+
+
+
 function Home() {
+
 
 
   gsap.registerPlugin(ScrollTrigger)
@@ -38,7 +42,7 @@ function Home() {
       }
     })
   });
-  
+
   const settings = {
     infinite: true,
     slidesToShow: 1,
@@ -78,7 +82,7 @@ function Home() {
               </div>
             </Slider>
           </div>
-          <div className="carousal_bg bg-red-700"></div>
+          <div className="carousal_bg"></div>
           <div className="b ">
             {/* <div className=""></div> */}
             <img src={banner} className="carousal_slide" />

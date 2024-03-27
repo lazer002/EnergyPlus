@@ -2,36 +2,31 @@ import React from 'react'
 import p1 from '../assets/p1.png'
 import '../js/animation.js'
 import gsap from "gsap";
+import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 function Details() {
-
-  // var clickdiv= document.querySelector('.clickdiv')
-
+useGSAP(()=>{
   gsap.registerPlugin(ScrollTrigger)
 
   gsap.to(".detail", {
 scrollTrigger:{
-  trigger:".detail",
-  // markers:true,
+  trigger:".d",
   start:"50px 80%",
-  // end:"10% 50%",
-  // toggleActions:"play restart reverse none",
-  scrub:1
+  scrub:2
 },
-scale:1.1,
+scale:1.3,
 duration:3,
   })
-
+})
   
 
   
   return (
     <>
-    <div className="detail container flex justify-center shadow-2xl rounded-3xl bg-3 my-24">
-      <div className='bg-red-600 rounded-full fixed py-8 px-7 font-bold clickdiv scale-0'>
-Click
-      </div>
+    <div className="d">
+    <div className="detail container flex justify-center shadow-2xl rounded-3xl bg-3 ">
+
       <div className="w-full border-gray-50">
         <img src={p1} alt="" className='mt-36 shadow1' />
       </div>
@@ -66,6 +61,7 @@ Click
 
 </div>
       </div>
+    </div>
     </div>
     
     </>

@@ -12,10 +12,9 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
-
+const locomotiveScroll = new LocomotiveScroll()
   return (
-<>
+
 <BrowserRouter>
 {/* <Navbar/> */}
 <Routes>
@@ -27,8 +26,7 @@ function App() {
 
 
 </Routes>
-</BrowserRouter></>
-
+</BrowserRouter>
   )
 }
 
