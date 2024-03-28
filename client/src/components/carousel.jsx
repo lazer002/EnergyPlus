@@ -15,24 +15,30 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cards from './cards';
 
+
+
+
+
+
+
 function carousel() {
   const settings = {
     className: "center",
-    centerMode: true,
+    // centerMode: true,
     infinite: true,
-    centerPadding: "330px",
+    // centerPadding: "0px",
     slidesToShow: 3,
     autoplay: true,
     speed: 3000,
     autoplaySpeed: 3000,
- 
-  };
+
+  }
   return (
     <>
     
-      <div className="shadow-2xl h-screen z-50"  data-scroll data-scroll-speed="5" data-scroll-repeat="true">
-        <div className="rounded-2xl shadow-lg px-24">
-          <div className="text-center text-6xl pb-5">Hot Product</div>
+      <div className="container shadow-2xl h-screen z-50 bg-3 rounded-3xl"  data-scroll data-scroll-speed="2" data-scroll-repeat="true">
+        <div className="rounded-2xl shadow-lg">
+          <div className="text-center text-6xl py-8">Hot Product</div>
           <div className="h-3/4 text-center slerder">
             <Slider {...settings}>
               <Cards cardimage={p3} title='a' />

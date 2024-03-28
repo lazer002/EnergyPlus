@@ -4,7 +4,7 @@ function Move() {
   return (
     <>
 
- <div className="" data-scroll data-scroll-speed="0.9">   
+ <div className="my-64 " >   
  <div className='scroll-anime' >
 <div className='scroll-div'>
     <div>GIVE</div>

@@ -20,12 +20,12 @@ import p2 from '../assets/p6.png'
 import p3 from '../assets/p5.png'
 import p4 from '../assets/p9.png'
 import Move from './Move.jsx';
-
+import LocomotiveScroll from 'locomotive-scroll';
 
 
 function Home() {
 
-
+const locomotiveScroll = new LocomotiveScroll()
 
   gsap.registerPlugin(ScrollTrigger)
   useGSAP(() => {
@@ -91,6 +91,7 @@ function Home() {
       </div>
 
       <Carousel />
+      <Move />
       <Details />
       <Move />
 

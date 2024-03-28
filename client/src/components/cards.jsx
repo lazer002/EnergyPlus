@@ -5,7 +5,7 @@ import banner from '../assets/banner.png'
 function Cards(props) {
   return (
     <>
-<div className="w-full px-4 ">
+<div className="w-full mx-8 ">
             <div className="bg-white rounded-lg overflow-hidden mb-10 shadow1 glass">
                <img
                   src={props.cardimage}
