@@ -1,0 +1,37 @@
+.nav-tab h1::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transition: all ease 0.4s;
+    border-radius: 100%;
+}
+
+.nav-tab h1:hover::after{
+    bottom: 0;
+    transition: all ease 0.4s;
+    border-radius: 0;
+}
+.scroll-anime{
+    font-size: 11rem;
+font-weight: 900;
+white-space: nowrap;
+overflow: auto;
+
+}
+.scroll-div{white-space: nowrap;  
+    animation: scroll 10s linear infinite;
+    display: inline-block;}
+    .scroll-div div{white-space: nowrap;  
+        display: inline-block;}
+.scroll-anime::-webkit-scrollbar{display: none;}
+
+@keyframes  scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{transform: translateX(-100%);}
+}
