@@ -19,13 +19,13 @@ const locomotiveScroll = new LocomotiveScroll()
 
 <BrowserRouter>
 {/* <MouseTracker/> */}
-<div class="animation-container">
-      <div class="shape1"></div>
-      <div class="shape2"></div>
-      <div class="shape3"></div>
-      <div class="shape4"></div>
-      <div class="shape5"></div>
-      <div class="shape6"></div>
+<div className="animation-container">
+      <div className="shape1"></div>
+      <div className="shape2"></div>
+      <div className="shape3"></div>
+      <div className="shape4"></div>
+      <div className="shape5"></div>
+      <div className="shape6"></div>
     </div>
 <Navbar/>
 <Routes>
