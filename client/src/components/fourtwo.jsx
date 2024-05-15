@@ -18,7 +18,7 @@ function Fourtwo({ pimg, pname }) {
         trigger: '.imagehover',
         start: 'top 90%',
         end: 'bottom 70%',
-        // scrub: true, 
+        scrub: true, 
         markers:true
       }
     });
@@ -36,6 +36,7 @@ function Fourtwo({ pimg, pname }) {
       }
     });
   })
+ 
 
   return (
     <>
