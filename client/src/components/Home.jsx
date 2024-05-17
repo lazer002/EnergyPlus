@@ -11,10 +11,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Bannertitle from './Bannertitle.jsx';
 import Perks from './Perks.jsx';
 import Details from './details.jsx';
-//  import Sliderrr from './slider.jsx'
 import Vod from '../assets/video/v3.webm'
+//  import Sliderrr from './slider.jsx'
 // import Vod2 from '../assets/video/v.mp4'
-import Footer from './footer.jsx';
+import Footer from './Footer.jsx';
 import Fourtwo from './fourtwo.jsx';
 import p1 from '../assets/p3.png'
 import p2 from '../assets/p6.png'
@@ -73,14 +73,14 @@ function Home() {
 
       <div className="wrapper">
         <div className="pages">
-          <Fourtwo pimg={p1} pname='ORANGEDRINK' bghover='bg-orange-600' />
-          <Fourtwo pimg={p2} pname='GREENDRINK' bghover='bg-white' />
-          <Fourtwo pimg={p3} pname='REDDRINK' bghover='bg-red-700' />
-          <Fourtwo pimg={p4} pname='REDDRINK' bghover='bg-pink-600' />
+          <Fourtwo pimg={p1}  bghover='text-orange-600' />
+          <Fourtwo pimg={p2}  bghover='text-white' />
+          <Fourtwo pimg={p3}  bghover='text-red-700' />
+          <Fourtwo pimg={p4} bghover='text-pink-600' />
         </div>
       </div>
       <Perks />
-      <Footer />
+      <Footer/>
 
 
 

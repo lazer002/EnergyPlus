@@ -26,8 +26,8 @@ function Move() {
   return (
     <>
 <div className="zo">
-      <div className=" mt-96 mb-48" data-scroll data-scroll-speed='-0.4' >
-        <div className='scroll-anime' >
+      <div className=" mt-96 mb-56" data-scroll data-scroll-speed='-0.3' >
+        <div className='scroll-anime text-white' >
           <div className='scroll-div'>
             <div>GIVE</div>
             <div className='size-20 bg-rose-600 rounded-full m-8'></div>

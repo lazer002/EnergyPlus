@@ -39,6 +39,7 @@ const locomotiveScroll = new LocomotiveScroll()
 
 </Routes>
 </BrowserRouter>
+
   )
 }
 

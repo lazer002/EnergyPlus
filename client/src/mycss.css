@@ -357,54 +357,13 @@ nav{box-shadow: rgba(0, 0, 0, 0.603) 0px 19px 38px, rgba(0, 0, 0, 0.568) 0px 15p
   z-index: -1;
   position: relative;
 }
-/* 
-.imagehover:hover img {
-  position: relative;
-  border-radius: 100%;
-  transform: rotate(30deg), ;
-  transition: 1s;
-  transform: scale(1.15);
-  z-index: 1100;
-}
 
-
-.imagehover{height: 100vh;
-align-items: center;}
-.cardholder:hover .sub1 {
-  opacity: 1;
-  border-radius: 100%;
-  transform: rotate(70deg);
-  transition: 1s;
-  top: -40px;
-  z-index: 1100;
-}
-
-.cardholder:hover .sub-picture {
-  opacity: 1;
-  border-radius: 100%;
-  transform: rotate(-70deg);
-  transition: 1s;
-  z-index: 1100;
-
-}
-
-.cardholder:hover .sub-picture2 {
-  opacity: 1;
-  border-radius: 100%;
-  transform: rotate(-70deg);
-  transition: 1s;
-  z-index: 1100;
-}
-
-.cardholder:hover .cardtext {
-  opacity: 1;
-  left: 40%;
-  transition: 2s;
-z-index: 1100;
-} */
 
 /* pageanimation */
 
+.cardtext{display: flex;
+justify-content: center;
+align-items: center;}
 .animation-container {
   background: rgb(127, 225, 250);
   position: fixed;
