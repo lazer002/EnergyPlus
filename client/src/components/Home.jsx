@@ -40,7 +40,7 @@ function Home() {
         trigger: '.pages',
         pin: true,
         scrub: 1,
-        end: '+=6000'
+        end: '+=4000'
       }
     })
   });
@@ -73,10 +73,10 @@ function Home() {
 
       <div className="wrapper">
         <div className="pages">
-          <Fourtwo pimg={p1}  bghover='text-orange-600' />
-          <Fourtwo pimg={p2}  bghover='text-white' />
-          <Fourtwo pimg={p3}  bghover='text-red-700' />
-          <Fourtwo pimg={p4} bghover='text-pink-600' />
+          <Fourtwo pimg={p1}  bghover='bg-orange-600' />
+          <Fourtwo pimg={p2}  bghover='bg-white' />
+          <Fourtwo pimg={p3}  bghover='bg-red-700' />
+          <Fourtwo pimg={p4} bghover='bg-pink-600' />
         </div>
       </div>
       <Perks />

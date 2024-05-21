@@ -17,30 +17,30 @@ function Fourtwo({ pimg, pname, bghover }) {
         trigger: '.cardholder',
         start: 'top 90%',
         end: 'bottom 30%',
-        // scrub: true,
+        scrub: true,
         markers: true
       }
     });
     gsap.to('.cardtext', {
-      x: -550,
+      x: -500,
       delay: 2,
       duration: 2,
       opacity:1,
       scrollTrigger: {
         trigger: '.cardholder',
-        scrub: true,
+        scrub: 1,
         markers: true
       }
     });
     gsap.from('.cardholder', {
       scale: 0.7,
-      rotation: 230,
+      rotation: 360,
       duration: 2,
       scrollTrigger: {
         trigger: '.imagehover',
         start: 'top 110%',
         end: 'bottom 30%',
-        scrub: true,
+        scrub: 1,
         // markers: true
       }
     });
@@ -53,7 +53,7 @@ function Fourtwo({ pimg, pname, bghover }) {
         trigger: '.imagehover',
         start: 'top 90%',
         end: 'bottom 30%',
-        scrub: true,
+        scrub: 1,
         // markers: true
       }
     });
@@ -62,17 +62,19 @@ function Fourtwo({ pimg, pname, bghover }) {
   return (
     <>
 
-      <div className={`relative overflow-hidden cardholder  h-screen page`}  >
+      <div className={`relative overflow-hidden cardholder page ${bghover}`}  >
         <div className='imagehover flex justify-center py-12'>
           <img src={pimg} alt="" className='max-w-5xl shadow1 z-10' />
           <div className='prohover'></div>
+     <button className=' bg-slate-100 rounded-2xl p-10 absolute bottom-52'>Add To Cart</button>
         </div>
         <img src={pimg} alt="" className='size-64 shadow1 absolute top-4 right-0 rotate-45 opacity-0 sub-picture2' />
         <img src={pimg} alt="" className='size-48 absolute top-0 rotate-15 opacity-0 sub1 shadow1' />
         <img src={pimg} alt="" className='size-36 absolute bottom-0 left-24 rotate-45 opacity-0 sub-picture shadow1' />
+        <div className={`absolute left-2/4 text-8xl font-extrabold cardtext_side opacity-0 rotate-90 `}>sidetext</div>
+        <div className={`absolute top-56 left-56 text-8xl font-extrabold cardtext1 scale-150`}>Best One Around</div>
       </div>
-        <div className={`absolute  top-56 left-56 text-8xl font-extrabold cardtext ${bghover}`}>REDDRINK</div>
-        <div className={`absolute  bottom-56 right-56 text-8xl font-extrabold cardtext ${bghover}`}>REDDRINK</div>
+
     </>
   )
 }

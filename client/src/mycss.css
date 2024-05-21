@@ -526,3 +526,72 @@ align-items: center;}
 .bgrad{ 
   z-index: 100 !important;
   background: linear-gradient(to top, rgb(26, 162, 196), rgba(250, 250, 250, 0.021));}
+
+
+
+  
+.imagehover:hover img {
+  position: relative;
+  border-radius: 100%;
+  transform: rotate(30deg), ;
+  transition: 1s;
+  transform: scale(1.15);
+
+}
+
+
+
+.imagehover{height: 100vh;
+align-items: center;}
+.cardholder:hover .sub1 {
+  opacity: 1;
+  border-radius: 100%;
+  transform: rotate(70deg);
+  transition: 1s;
+  top: -40px;
+
+
+  /* transform: scale(1.15); */
+}
+
+.cardholder:hover .sub-picture {
+  opacity: 1;
+  border-radius: 100%;
+  transform: rotate(-70deg);
+  transition: 1s;
+
+
+}
+
+.cardholder:hover .sub-picture2 {
+  opacity: 1;
+  border-radius: 100%;
+  transform: rotate(-70deg);
+  transition: 1s;
+ 
+}
+
+.cardholder:hover .cardtext {
+  opacity: 1;
+  left: 40%;
+  transition: 2s;
+
+}
+.cardholder:hover .cardtext1 {
+  opacity: 1;
+  left: 40%;
+  transition: 2s;
+}
+
+.cardholder:hover .cardtext_side {
+  opacity: 1;
+  left: 53%;
+  transition: 2s;
+font-size: 10rem;
+}
+.page{height: 160%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+/* width: 200%; */
+}
