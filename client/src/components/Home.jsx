@@ -72,13 +72,14 @@ function Home() {
 
 
       <div className="wrapper">
-        <div className="pages">
-          <Fourtwo pimg={p1}  bghover='text-orange-600' sidetext='OrangeTang Flavor'/>
-          <Fourtwo pimg={p2}  bghover='bg-white text-black' sidetext='Lemon Flavor' />
-          <Fourtwo pimg={p3}  bghover='bg-red-700 text-white' sidetext='Pomegranate Flavor'/>
-          <Fourtwo pimg={p4} bghover='bg-pink-600  text-white'sidetext='Lychee Flavor' />
-        </div>
-      </div>
+  <div className="pages">
+    <Fourtwo pimg={p1} bghover='bg-orange-600 text-orange-600' sidetext='OrangeTang Flavor' index={0} />
+    <Fourtwo pimg={p2} bghover='bg-white text-black' sidetext='Lemon Flavor' index={1} />
+    <Fourtwo pimg={p3} bghover='bg-red-700 text-white' sidetext='Pomegranate Flavor' index={2} />
+    <Fourtwo pimg={p4} bghover='bg-pink-600 text-white' sidetext='Lychee Flavor' index={3} />
+  </div>
+</div>
+
       <Perks />
       <Footer/>
 
