@@ -530,18 +530,19 @@ align-items: center;}
 
 
   
-.imagehover:hover img {
+/* .imagehover:hover img {
   position: relative;
   border-radius: 100%;
   transform: rotate(30deg), ;
   transition: 1s;
   transform: scale(1.15);
 
-}
+} */
 
 
 
-.imagehover{height: 100vh;
+.imagehover{
+  height: 100vh;
 align-items: center;}
 .cardholder:hover .sub1 {
   opacity: 1;
@@ -550,7 +551,7 @@ align-items: center;}
   transition: 1s;
   top: -40px;
 
-
+left: 40%;
   /* transform: scale(1.15); */
 }
 
@@ -559,7 +560,6 @@ align-items: center;}
   border-radius: 100%;
   transform: rotate(-70deg);
   transition: 1s;
-
 
 }
 
@@ -583,15 +583,22 @@ align-items: center;}
   transition: 2s;
 }
 
-.cardholder:hover .cardtext_side {
+/* .cardholder:hover .cardtext_side {
   opacity: 1;
-  left: 53%;
+  top: 47%;
+  left: 43%;
   transition: 2s;
-font-size: 10rem;
+font-size: 15rem;
+} */
+.cardholder:hover .cart {
+  opacity: 1;
+  transition: 2s;
+bottom:10%;
 }
-.page{height: 160%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-/* width: 200%; */
+
+.page{
+height: 150%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
