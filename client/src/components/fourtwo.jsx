@@ -35,8 +35,7 @@ function Fourtwo({ pimg, pname, bghover, sidetext, index }) {
 
       }
     });
-
-    gsap.from('.cardholder', {
+    gsap.from('.imagehover', {
       scale: 1,
    
       rotation: 360,
@@ -45,29 +44,30 @@ function Fourtwo({ pimg, pname, bghover, sidetext, index }) {
         trigger: '.imagehover',
         start: 'top 110%',
         end: 'bottom 30%',
-        scrub: 3,
+        scrub: 1,
       
       }
     });
 
-    gsap.to('.cardholder', {
+    gsap.to('.imagehover', {
       scale: 1,
    
       rotation: 0,
       duration: 2,
       scrollTrigger: {
         trigger: '.imagehover',
-        start: 'top 190%',
+        start: 'top 160%',
         end: '0%',
-        scrub: 3,
+        scrub: 1,
         markers: true
       }
     });
+ 
     if (index !== 0) {
       gsap.from('.cardtext_side', {
-        scale: .7,
-        y: -500,
-        x: 500,
+       
+        y: 500,
+        x: 800,
         rotation: 0,
         scrollTrigger: {
           trigger: '.cardtext_side',
@@ -81,7 +81,7 @@ function Fourtwo({ pimg, pname, bghover, sidetext, index }) {
       gsap.to('.cardtext_side', {
         scale: 3,
         rotation: 0,
-        y: 500,
+     
         x: -800,
         scrollTrigger: {
           trigger: '.cardtext_side',
@@ -91,6 +91,9 @@ function Fourtwo({ pimg, pname, bghover, sidetext, index }) {
           // markers: true
         }
       });
+
+
+
     }
   }, [bghover]);
 
@@ -99,15 +102,17 @@ function Fourtwo({ pimg, pname, bghover, sidetext, index }) {
     <>
 
       <div className={`relative overflow-hidden cardholder page ${bghover} `}  >
-        <div className='imagehover flex justify-center py-12'>
-          <img src={pimg} alt="" className='max-w-5xl shadow1 z-10' />
+        <div className='imagehover flex justify-center py-12 z-20'>
+          <img src={pimg} alt="" className='max-w-5xl shadow1 ' />
           <div className='prohover'></div>
-          <button className=' bg-slate-100 rounded-2xl p-10 absolute bottom-44 cart opacity-0'>Add To Cart</button>
+          <button className=' bg-slate-100 text-black rounded-2xl p-10 absolute bottom-44 cart opacity-0 '>Add To Cart</button>
         </div>
-        <img src={pimg} alt="" className='size-64 shadow1 absolute top-4 right-0 rotate-45 opacity-0 sub-picture2' />
-        <img src={pimg} alt="" className='size-48 absolute top-0 rotate-15 opacity-0 sub1 shadow1' />
+        <img src={pimg} alt="" className='size-64 shadow1 absolute top-44 right-0 rotate-45 opacity-0 sub-picture2' />
+        <img src={pimg} alt="" className='size-64 shadow1 absolute  top-72 right-2/4 rotate-12 opacity-0 sub-picture3' />
+        <img src={pimg} alt="" className='size-64 shadow1 absolute  bottom-64  rotate-12 opacity-0 sub-picture4' />
+        <img src={pimg} alt="" className='size-64 absolute bottom-44  rotate-15 opacity-0 sub1 shadow1' />
         <img src={pimg} alt="" className='size-36 absolute bottom-0 left-24 rotate-45 opacity-0 sub-picture shadow1' />
-        <div className={`absolute left-2/4 top-4 text-8xl font-extrabold cardtext_side  rotate-90 `}>{sidetext}</div>
+        <div className={`absolute left-2/4 top-4 text-8xl font-extrabold cardtext_side z-0 rotate-90 `}>{sidetext}</div>
       </div>
 
     </>
