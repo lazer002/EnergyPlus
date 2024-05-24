@@ -43,6 +43,14 @@ function Home() {
         end: '+=5000'
       }
     })
+    gsap.to('.offertext' , {
+      transform:'translateX(-300%)',
+      scrollTrigger:{
+        trigger:'offertext',
+        scrub:3,
+  
+      }
+    })
   });
 
   const settings = {
@@ -57,6 +65,8 @@ function Home() {
 
   };
 
+
+
   return (
     <>
 
@@ -67,21 +77,42 @@ function Home() {
       {/* <Carousel /> */}
       <Move />
       <Details />
-      {/* <Move /> */}
-    
+      <div className="text-banner bg-black relative rotate-12 z-50">
+        <div className="offertext flex border-2 border-white py-2">
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+  
+        </div>
+      </div>
+
 
 
       <div className="wrapper">
-  <div className="pages">
-    <Fourtwo pimg={p1} bghover='bg-orange-600 text-white' sidetext='OrangeTang Flavor' index={0} />
-    <Fourtwo pimg={p2} bghover='bg-white text-black' sidetext='Lemon Flavor' index={1} />
-    <Fourtwo pimg={p3} bghover='bg-red-700 text-white' sidetext='Pomegranate Flavor' index={2} />
-    <Fourtwo pimg={p4} bghover='bg-pink-600 text-white' sidetext='Lychee Flavor' index={3} />
-  </div>
-</div>
+        <div className="pages">
+          <Fourtwo pimg={p1} bghover='bg-orange-600 text-white' sidetext='OrangeTang Flavor' index={0} />
+          <Fourtwo pimg={p2} bghover='bg-white text-black' sidetext='Lemon Flavor' index={1} />
+          <Fourtwo pimg={p3} bghover='bg-red-700 text-white' sidetext='Pomegranate Flavor' index={2} />
+          <Fourtwo pimg={p4} bghover='bg-pink-600 text-white' sidetext='Lychee Flavor' index={3} />
+        </div>
+      </div>
+
+
 
       <Perks />
-      <Footer/>
+
+      <Footer />
 
 
 
