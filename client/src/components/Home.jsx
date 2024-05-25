@@ -51,21 +51,15 @@ function Home() {
   
       }
     })
+    gsap.from('.offertext1' , {
+      transform:'translateX(-300%)',
+      scrollTrigger:{
+        trigger:'offertext1',
+        scrub:3,
+  
+      }
+    })
   });
-
-  const settings = {
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    vertical: true,
-    autoplay: true,
-    speed: 3000,
-    autoplaySpeed: 3000,
-    verticalSwiping: false,
-
-  };
-
-
 
   return (
     <>
@@ -77,8 +71,13 @@ function Home() {
       {/* <Carousel /> */}
       <Move />
       <Details />
-      <div className="text-banner bg-black relative rotate-12 z-50">
+      <div className="text-banner bg-black relative -bottom-16  rotate-1 z-50 overflow-hidden">
         <div className="offertext flex border-2 border-white py-2">
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
@@ -97,8 +96,54 @@ function Home() {
         </div>
       </div>
 
-
-
+      <div className="text-banner bg-black relative -bottom-20  -rotate-3 z-50">
+        <div className="offertext1 flex border-2 border-white py-2 text-left">
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+  
+        </div>
+      </div>
+      <div className="text-banner bg-black relative rotate-1 z-50 overflow-hidden -bottom-10 ">
+        <div className="offertext flex border-2 border-white py-2">
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+  
+        </div>
+      </div>
       <div className="wrapper">
         <div className="pages">
           <Fourtwo pimg={p1} bghover='bg-orange-600 text-white' sidetext='OrangeTang Flavor' index={0} />

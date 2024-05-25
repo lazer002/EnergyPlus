@@ -34,14 +34,14 @@ function Details() {
       <div className="d flex justify-center mb-48">
         <div className="detail w-9/12 flex justify-center shadow-2xl rounded-3x glass3 bgrad">
        
-            <div className="w-2/3 ">
-        <video src={vod} loop autoPlay muted className='w-100 rounded-t-3xl rounded-b-3xl z-10'></video>
+            <div className="w-2/3">
+        <video src={vod} loop autoPlay muted className='dvod w-100 rounded-t-3xl rounded-b-3xl z-10' ></video>
               {/* <img src={p1} alt="" className='mt-36 shadow1 ' /> */}
             </div>
 
             <div className="p-8">
               <div className=' rounded-xl'>
-                <p className=' text-blue-500 py-2 text-3xl font-bold'> <span className='bg-blue-800 text-white'>fwafwafaw </span> gfuwabu gwhaig awi <br /> ojg owagiwa jg wajg</p>
+                <p className=' text-orange-500 py-2 text-3xl font-bold'> <span className='bg-orange-800 text-white'>fwafwafaw </span> gfuwabu gwhaig awi <br /> ojg owagiwa jg wajg</p>
                 <div className='text-2xl pb-1'>180/100 , As 19H</div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam eos exercitationem ut sequi! Delectus dolores aspernatur sunt libero id voluptatibus itaque </p>
               </div>

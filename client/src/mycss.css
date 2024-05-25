@@ -557,7 +557,7 @@ nav {
 
 .bgrad {
   z-index: 100 !important;
-  background: linear-gradient(to top, rgb(26, 162, 196), rgba(250, 250, 250, 0.021));
+  background: linear-gradient(to top, rgb(196, 88, 26), rgba(250, 250, 250, 0.021));
 }
 
 
@@ -653,7 +653,9 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.offertext div{font-size: 2vh;
+.offertext ,.offertext1 div{font-size: 2vh;
 color: white;
 font-weight: 600;
 }
+.dvod{filter: hue-rotate(-184deg);
+  filter: invert(1)}

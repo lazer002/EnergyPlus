@@ -5,7 +5,7 @@ function Footer() {
 
     
     <>
-      <div className="container pt-35 pb-12">
+      <div className="container pt-35 pb-12 relative">
         <div className="flex justify-between">
           <div className="utiles space-y-6 font-thin">
             <div className='font-extrabold text-xl'>UTILITIES</div>

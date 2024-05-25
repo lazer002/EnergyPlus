@@ -30,27 +30,27 @@ function Move() {
         <div className='scroll-anime text-white' >
           <div className='scroll-div'>
             <div>GIVE</div>
-            <div className='size-20 bg-rose-600 rounded-full m-8'></div>
+            <div className='size-20 bg-orange-600 rounded-full m-8'></div>
             <div>YOU</div>
-            <div className='size-20 bg-rose-600 rounded-full m-8'></div>
+            <div className='size-20 bg-orange-600 rounded-full m-8'></div>
             <div>ENERGY</div>
-            <div className='size-20 bg-rose-600 rounded-full m-8'></div>
+            <div className='size-20 bg-orange-600 rounded-full m-8'></div>
           </div>
           <div className='scroll-div'>
             <div>GIVE</div>
-            <div className='size-20 bg-rose-600 rounded-full m-8'></div>
+            <div className='size-20 bg-orange-600 rounded-full m-8'></div>
             <div>YOU</div>
-            <div className='size-20 bg-rose-600 rounded-full m-8'></div>
+            <div className='size-20 bg-orange-600 rounded-full m-8'></div>
             <div>ENERGY</div>
-            <div className='size-20 bg-rose-600 rounded-full m-8'></div>
+            <div className='size-20 bg-orange-600 rounded-full m-8'></div>
           </div>
           <div className='scroll-div'>
             <div>GIVE</div>
-            <div className='size-20 bg-rose-600 rounded-full m-8'></div>
+            <div className='size-20 bg-orange-600 rounded-full m-8'></div>
             <div>YOU</div>
-            <div className='size-20 bg-rose-600 rounded-full m-8'></div>
+            <div className='size-20 bg-orange-600 rounded-full m-8'></div>
             <div>ENERGY</div>
-            <div className='size-20 bg-rose-600 rounded-full m-8'></div>
+            <div className='size-20 bg-orange-600 rounded-full m-8'></div>
           </div>
 
         </div>
