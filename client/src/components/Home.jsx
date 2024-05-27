@@ -120,7 +120,7 @@ function Home() {
   
         </div>
       </div>
-      <div className="text-banner bg-black relative rotate-1 z-50 overflow-hidden -bottom-10 ">
+      <div className="text-banner bg-black relative rotate-3 z-50 overflow-hidden -bottom-10 ">
         <div className="offertext flex border-2 border-white py-2">
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>

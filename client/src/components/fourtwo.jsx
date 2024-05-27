@@ -105,7 +105,7 @@ function Fourtwo({ pimg, pname, bghover, sidetext, index }) {
           <img src={pimg} alt="" className='max-w-5xl shadow1 ' />
           <div className='prohover'></div>
         </div>
-          <button className=' bg-slate-100 text-black rounded-2xl p-10 absolute bottom-44 cart opacity-0 '>Add To Cart</button>
+          <button className=' bg-slate-100 text-black rounded-2xl p-10 absolute bottom-40 cart opacity-0 '>Add To Cart</button>
         <img src={pimg} alt="" className='size-64 shadow1 absolute top-44 right-0 rotate-45 opacity-0 sub-picture2' />
         <img src={pimg} alt="" className='size-64 shadow1 absolute  top-72 right-2/4 rotate-12 opacity-0 sub-picture3' />
         <img src={pimg} alt="" className='size-64 shadow1 absolute  bottom-72 right-44 rotate-12 opacity-0 sub-picture4' />

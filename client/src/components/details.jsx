@@ -31,7 +31,7 @@ function Details() {
 
 {/* data-scroll data-scroll-speed='-1' */}
 
-      <div className="d flex justify-center mb-48">
+      <div className="d flex justify-center mb-24">
         <div className="detail w-9/12 flex justify-center shadow-2xl rounded-3x glass3 bgrad">
        
             <div className="w-2/3">
