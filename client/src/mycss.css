@@ -385,7 +385,9 @@ nav {
 }
 
 .animation-container {
-  background: rgb(127, 190, 250);;
+ 
+  /* background: rgb(127, 190, 250); */
+  background:  rgb(105 105 105);
   position: fixed;
   height: 100%;
   width: 100%;
@@ -555,8 +557,8 @@ nav {
 /*  */
 
 
-.bgrad {
-  z-index: 100 !important;
+.detail {
+  z-index: 10 !important;
   background: linear-gradient(to top, rgb(196, 88, 26), rgba(250, 250, 250, 0.021));
 }
 
@@ -660,3 +662,13 @@ font-weight: 600;
 }
 .dvod{filter: hue-rotate(-184deg);
   filter: invert(1)}
+  .text-banner{width: 102%;}
+
+  /* .banner::after{
+    content: '';
+  height: 100px;
+width: 100%;
+position: absolute;
+top: 0;
+background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8071603641456583) 32%, rgba(0,212,255,0) 100%);} */

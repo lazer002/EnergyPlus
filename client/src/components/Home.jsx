@@ -64,14 +64,15 @@ function Home() {
   return (
     <>
 
-      <div className="" >
+      <div className="banner" >
         <video src={Vod} loop autoPlay muted className='h-100 z-0' data-scroll data-scroll-speed='-1'></video>
       </div>
 
       {/* <Carousel /> */}
       <Move />
+      
       <Details />
-      <div className="text-banner bg-black relative -bottom-16  rotate-1 z-50 overflow-hidden">
+      <div className="text-banner  bg-black relative -bottom-16  rotate-1 z-50 overflow-hidden">
         <div className="offertext flex border-2 border-white py-2">
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
@@ -96,7 +97,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="text-banner bg-black relative -bottom-20  -rotate-3 z-50">
+      <div className="text-banner bg-black relative -bottom-24 -rotate-1 z-50">
         <div className="offertext1 flex border-2 border-white py-2 text-left">
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
@@ -120,7 +121,32 @@ function Home() {
   
         </div>
       </div>
-      <div className="text-banner bg-black relative rotate-3 z-50 overflow-hidden -bottom-10 ">
+
+      <div className="text-banner bg-black relative py-12 rotate-3 -top-4 -left-2 z-40">
+        <div className="offertext1 flex border-2 border-white  text-left">
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+          <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
+  
+        </div>
+      </div>
+      <div className="text-banner bg-black relative -rotate-1 z-50 overflow-hidden -top-12">
         <div className="offertext flex border-2 border-white py-2">
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
           <div className=' whitespace-nowrap px-8'>$  Get Discount Up TO 30%  $</div>
@@ -144,7 +170,7 @@ function Home() {
   
         </div>
       </div>
-      <div className="wrapper">
+      <div className="wrapper -top-20">
         <div className="pages">
           <Fourtwo pimg={p1} bghover='bg-orange-600 text-white' sidetext='OrangeTang Flavor' index={0} />
           <Fourtwo pimg={p2} bghover='bg-white text-black' sidetext='Lemon Flavor' index={1} />

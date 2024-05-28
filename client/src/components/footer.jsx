@@ -34,8 +34,8 @@ function Footer() {
           </div>
         </div>
         <div className="policy text-center">
-          <div className='font-bold'>© 2024 | 3D ENERGY DRINKS | ALL RIGHTS RESERVED</div>
-          <div className='text-sm'>7201 Intermodal Dr. Ste A <br />
+          <div className='font-bold'>© 2024 | 3D LAZER DRINKS | ALL RIGHTS RESERVED</div>
+          <div className='text-sm'>7201 Heaven Dr. Ste A <br />
             Louisville, KY 40258</div>
         </div>
       </div>

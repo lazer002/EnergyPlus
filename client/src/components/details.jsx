@@ -12,7 +12,7 @@ function Details() {
 
     gsap.to(".detail", {
       scrollTrigger: {
-        trigger: ".d",
+        trigger: ".data",
         start: "20px 80%",
         end: "80% 80px",
         scrub: 2,
@@ -31,8 +31,8 @@ function Details() {
 
 {/* data-scroll data-scroll-speed='-1' */}
 
-      <div className="d flex justify-center mb-24">
-        <div className="detail w-9/12 flex justify-center shadow-2xl rounded-3x glass3 bgrad">
+      <div className="data flex justify-center mb-18">
+        <div className="detail w-9/12 flex justify-center shadow-2xl rounded-3x glass3 ">
        
             <div className="w-2/3">
         <video src={vod} loop autoPlay muted className='dvod w-100 rounded-t-3xl rounded-b-3xl z-10' ></video>
