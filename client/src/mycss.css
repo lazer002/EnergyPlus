@@ -412,3 +412,39 @@ left:-17%;
 top: -32px;
 
 }
+
+
+
+.pro_img {
+  position: absolute;
+  transform: translate(12%, 26%);
+  background-color: blueviolet;
+  width: 50%; /* Adjusted width */
+  height: 13vh;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.expanded {
+  position: fixed;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 50%;
+  background-color: blueviolet; /* Background change */
+  border-radius: 0%;
+  z-index: 1000;
+  transition: width 3s, height 3s, border-radius 3s, background-color 3s; /* Added background-color to transition */
+}
+
+.expanded img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain; /* Fit within the container */
+}
+
+
+.expanded-image {
+  width: 100vw;
+  height: 100vh;
+}

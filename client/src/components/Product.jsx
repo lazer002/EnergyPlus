@@ -1,6 +1,9 @@
 import React from 'react';
-import suger from '../assets/p2.png';
+import p1 from '../assets/p2.png';
+import p2 from '../assets/p1.png';
+import p3 from '../assets/p3.png';
 import Footer from './footer';
+import Card_pro from './Card_pro';
 
 function Product() {
   return (
@@ -22,26 +25,13 @@ function Product() {
             <div className="p-2 border text-2xl">Filter 4</div>
           </div>
         </div>  
-        <div className="border w-1/4 p-8">
-          <div className="rounded-2xl glass p-6">
-            <div className="text-start">
-              <div className="text-4xl font-bold">ADIDAS</div>
-              <div className="text-md font-normal">ADIDAS FREE ME LEO faw 2</div>
-            </div>
-            
-              <img src={suger} alt="" className='scale-100 hover:scale-125 ease-in-out transition-all hover:rotate-12 z-50' />
-           
-            <div className="flex justify-between">
-              <div className="text-start">
-                <div className="font-normal text-sm text-green-600">ORIGINAL</div>
-                <div className="font-bold text-xl">ORIGINAL fwafwagw</div>
-              </div>
-              <div>
-                <div className="text-4xl font-bold">$130</div>
-              </div>
-            </div>
-          </div>
-        </div>
+    
+<Card_pro  product={p1} title='ADIDAS' subtitle='ADIDAS FREE ME LEO faw 2' flavour='ORIGINAL fwafwagw' price='$130' />
+
+<Card_pro  product={p2} title='ADIDAS' subtitle='ADIDAS FREE ME LEO faw 2' flavour='ORIGINAL fwafwagw' price='$130' />
+
+<Card_pro product={p3} title='ADIDAS' subtitle='ADIDAS FREE ME LEO faw 2' flavour='ORIGINAL fwafwagw' price='$130' />
+
       </div>
       <div className="flex justify-between">
         <div className="border w-1/4">a</div>
