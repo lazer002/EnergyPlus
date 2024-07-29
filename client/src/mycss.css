@@ -415,36 +415,84 @@ top: -32px;
 
 
 
-.pro_img {
-  position: absolute;
-  transform: translate(12%, 26%);
-  background-color: blueviolet;
-  width: 50%; /* Adjusted width */
-  height: 13vh;
-  border-radius: 50%;
-  z-index: 100;
+
+
+/* src/styles.css */
+.border {
+  border: 1px solid #ddd;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 .expanded {
   position: fixed;
-  top: 0;
-  left: 50;
-  width: 50%;
-  height: 50%;
-  background-color: blueviolet; /* Background change */
-  border-radius: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
-  transition: width 3s, height 3s, border-radius 3s, background-color 3s; /* Added background-color to transition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.expanded.active {
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
 }
 
 .expanded img {
-  width: 50%;
-  height: 50%;
-  object-fit: contain; /* Fit within the container */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.expanded-image {
+  transform: scale(1);
+}
+
+/* Example additional classes for card styling */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1); /* Example glass effect */
+  backdrop-filter: blur(10px);
+}
+
+.card-image {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text-start {
+  text-align: start;
 }
 
 
-.expanded-image {
-  width: 100vw;
-  height: 100vh;
+
+
+/* CSS Example */
+.first {
+  display: block;
+}
+
+.second {
+  display: none;
+}
+
+.expanded .first {
+  display: none;
+}
+
+.expanded .second {
+  display: block;
 }

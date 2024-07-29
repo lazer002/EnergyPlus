@@ -1,4 +1,4 @@
-// MouseTracker.js
+
 import React, {useState, useEffect } from 'react';
 
 function MouseTracker() {
@@ -8,10 +8,8 @@ function MouseTracker() {
       setPosition({ x: event.clientX, y: event.clientY });
     };
 
-    // Add event listener when component mounts
     document.addEventListener('mousemove', handleMouseMove);
 
-    // Remove event listener when component unmounts
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
     };
